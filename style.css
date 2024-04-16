@@ -1,0 +1,227 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    /* border: red solid 1px; */
+    font-family: "JetBrains Mono", monospace;
+    color: white;
+    letter-spacing: 3px;
+    user-select: none;
+}
+
+body {
+    background-color: #16111A;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+p {
+    font-weight: 400;
+}
+
+.title {
+    margin: 20px;
+}
+
+.copy-container {
+    background-color: #2d2039;
+    width: 450px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+}
+
+#password {
+    font-size: 22px;
+    font-weight: 700;
+    user-select: all;
+}
+
+.main-container {
+    background-color: #2d2039;
+    width: 450px;
+    padding: 25px;
+}
+
+.length-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.length-num-box {
+    color: #A638F6;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.slide-container {
+    margin-bottom: 15px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(90deg, #A638F6 46%, #2a2438 46%);
+    outline: none;
+
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.checkbox-container {
+    margin: 20px 0px 20px 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.check-button input {
+    display: none
+}
+
+.checkbox-img {
+    padding: 5px;
+    width: 15px;
+    height: 15px;
+    opacity: 0;
+}
+
+.check-button {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 0px;
+    background-color: #2d2039;
+    border: white solid 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.check-button:has(input:checked) {
+    background-color: #A638F6;
+    border: #A638F6 solid 1px;
+
+    .checkbox-img {
+        opacity: 1;
+    }
+}
+
+.strength-container {
+    margin-top: 45px;
+    background-color: #A638F6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#strength-text {
+    margin-left: 25px;
+}
+
+.strength-indicator-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#strength-text {
+    color: black;
+    font-weight: 500;
+}
+
+.bar-container {
+    margin-right: 25px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.bar {
+    width: 13px;
+    height: 43px;
+    border: solid #ff0101 1px;
+    margin: 10px 0px 10px 0px;
+    background-color: #ff0101;
+}
+
+#bar3 {
+    border: solid white 1px;
+    background-color: #A638F6;
+}
+
+#bar4 {
+    border: solid white 1px;
+    background-color: #A638F6;
+}
+
+#generate-button {
+    width: 100%;
+    height: 70px;
+    margin-top: 25px;
+    background-color: #A638F6;
+    border-radius: 0%;
+    border: none;
+    cursor: pointer;
+}
+
+.techover-logo {
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 720px) {
+    * {
+        letter-spacing: 0px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+
+    p {
+        font-weight: 300;
+    }
+
+    .title {
+        margin-top: 70px;
+    }
+
+    .copy-container {
+        width: 300px;
+    }
+
+    .main-container {
+        width: 300px;
+    }
+}
